@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CurriculmVitae</string>
+    <string name="section_gender_title">Gender</string>
+    <string name="g_homme">Homme</string>
+    <string name="g_femme">Femme</string>
+    <string name="section_skills_title">Skills</string>
+    <string name="btn_rst_txt">RESET</string>
+    <string name="btn_nxt_txt">NEXT</string>
+</resources>
