@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Color Mixer</string>
+    <string name="nameTvText">Enter your Name</string>
+    <string name="username_hint">Name</string>
+    <string name="mixBtnText">Mix</string>
+    <string name="submitBtnText">Submit</string>
+    <string name="mix_them_colors">Mix them colors:</string>
+    <string name="choose_2_colors">Choose 2 colors :</string>
+    <string name="blue_clr_chooser">blueClrChooser</string>
+    <string name="green">Green</string>
+    <string name="purple">Purple</string>
+    <string name="orange">Orange</string>
+    <string name="which_color_is_mixed">Which color is mixed?</string>
+    <string name="quit">Quit</string>
+    <string name="result_image">result image</string>
+</resources>

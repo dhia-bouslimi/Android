@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    tools:context=".FinalScreen"
+    tools:layout_editor_absoluteY="81dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="335dp"
+        android:layout_weight="1">
+
+        <View
+            android:id="@+id/bgResult"
+            android:layout_width="match_parent"
+            android:layout_height="335dp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgResult"
+                android:layout_width="229dp"
+                android:layout_height="229dp"
+                android:layout_marginTop="24dp"
+                android:contentDescription="@string/result_image"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/honorsTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/resultTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/quitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:text="@string/quit" />
+
+</LinearLayout>
