@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ResumePage">
+
+    <include
+        android:id="@+id/hereTb"
+        layout="@layout/layout_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragContainer"
+        android:layout_width="349dp"
+        android:layout_height="536dp"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hereTb"
+        tools:layout="@layout/fragment_basic_info" />
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="280dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="36dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@+id/fragContainer"
+        tools:layout_editor_absoluteX="55dp" />
+
+    <TextView
+        android:id="@+id/emailText"
+        android:layout_width="286dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="28dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/nameText"
+        tools:layout_editor_absoluteX="49dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
