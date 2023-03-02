@@ -1,4 +1,4 @@
- package tn.esprit.curriculumvitaev2.fragments
+package tn.esprit.curriculumvitaev2.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
