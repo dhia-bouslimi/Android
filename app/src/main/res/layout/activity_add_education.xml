@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddEducationActivity">
+
+    <include
+        layout="@layout/layout_add_edu"/>
+
+    <ImageView
+        android:id="@+id/uniImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginVertical="30dp"
+        android:contentDescription="@string/image"
+        android:src="@drawable/ic_baseline_image"
+        tools:ignore="ImageContrastCheck" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/uniNameTL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="@string/university_name"
+        android:textColorHint="@color/colorPrimaryDark"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/colorPrimaryDark"
+        app:boxStrokeErrorColor="@color/errorRed"
+        app:boxStrokeWidth="2dp"
+        app:errorIconTint="@color/errorRed"
+        app:errorTextColor="@color/errorRed"
+        app:hintAnimationEnabled="true"
+        app:hintEnabled="true"
+        app:startIconDrawable="@drawable/ic_baseline_corporate_fare">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/uniName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            tools:ignore="TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/uniAddrTL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="@string/university_address"
+        android:textColorHint="@color/colorPrimaryDark"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/colorPrimaryDark"
+        app:boxStrokeErrorColor="@color/errorRed"
+        app:boxStrokeWidth="2dp"
+        app:errorIconTint="@color/errorRed"
+        app:errorTextColor="@color/errorRed"
+        app:hintAnimationEnabled="true"
+        app:hintEnabled="true"
+        app:startIconDrawable="@drawable/ic_baseline_location_on">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/uniAddr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            tools:ignore="SpeakableTextPresentCheck,TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/uniStDateTL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="@string/start_date"
+        android:textColorHint="@color/colorPrimaryDark"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/colorPrimaryDark"
+        app:boxStrokeErrorColor="@color/errorRed"
+        app:boxStrokeWidth="2dp"
+        app:errorIconTint="@color/errorRed"
+        app:errorTextColor="@color/errorRed"
+        app:hintAnimationEnabled="true"
+        app:hintEnabled="true"
+        app:startIconDrawable="@drawable/calendar">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/uniStartDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:singleLine="true"
+            tools:ignore="SpeakableTextPresentCheck,TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/uniEdDateTL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="@string/end_date"
+        android:textColorHint="@color/colorPrimaryDark"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/colorPrimaryDark"
+        app:boxStrokeErrorColor="@color/errorRed"
+        app:boxStrokeWidth="2dp"
+        app:errorIconTint="@color/errorRed"
+        app:errorTextColor="@color/errorRed"
+        app:hintAnimationEnabled="true"
+        app:hintEnabled="true"
+        app:startIconDrawable="@drawable/calendar">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/uniEndDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:singleLine="true"
+            tools:ignore="SpeakableTextPresentCheck,TextContrastCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/saveBtnEd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        tools:ignore="TextContrastCheck"
+        android:layout_margin="20dp" />
+
+
+</LinearLayout>
